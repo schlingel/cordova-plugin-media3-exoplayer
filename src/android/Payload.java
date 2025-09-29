@@ -25,7 +25,12 @@ package co.frontyard.cordova.plugin.exoplayer;
 
 import android.util.Log;
 import android.view.*;
-import com.google.android.exoplayer2.*;
+
+import androidx.media3.exoplayer.ExoPlaybackException;
+import androidx.media3.exoplayer.ExoPlayer;
+import androidx.media3.common.PlaybackException;
+import androidx.media3.common.Timeline;
+
 import java.lang.*;
 import java.lang.Boolean;
 import java.lang.Integer;

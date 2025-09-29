@@ -35,15 +35,29 @@ import android.widget.*;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.ContentFrameLayout;
 
-import com.google.android.exoplayer2.*;
-import com.google.android.exoplayer2.source.*;
-import com.google.android.exoplayer2.source.dash.*;
-import com.google.android.exoplayer2.source.hls.*;
-import com.google.android.exoplayer2.source.smoothstreaming.*;
-import com.google.android.exoplayer2.ui.*;
-import com.google.android.exoplayer2.upstream.*;
-import com.google.android.exoplayer2.util.*;
-import com.google.android.exoplayer2.Player.PositionInfo;
+import androidx.media3.common.C;
+import androidx.media3.exoplayer.ExoPlayer;
+import androidx.media3.common.ForwardingPlayer;
+import androidx.media3.common.MediaItem;
+import androidx.media3.common.PlaybackException;
+import androidx.media3.common.PlaybackParameters;
+import androidx.media3.common.Timeline;
+import androidx.media3.common.MediaSource;
+import androidx.media3.common.MergingMediaSource;
+import androidx.media3.common.ProgressiveMediaSource;
+import androidx.media3.common.SingleSampleMediaSource;
+import androidx.media3.exoplayer.dash.DashMediaSource;
+import androidx.media3.exoplayer.hls.HlsMediaSource;
+import androidx.media3.exoplayer.smoothstreaming.SsMediaSource;
+import androidx.media3.ui.PlayerView;
+import androidx.media3.common.Player.PositionInfo;
+import androidx.media3.datasource.DataSource;
+import androidx.media3.exoplayer.upstream.DefaultBandwidthMeter;
+import androidx.media3.datasource.DefaultDataSource;
+import androidx.media3.datasource.DefaultHttpDataSource;
+import androidx.media3.datasource.HttpDataSource;
+import androidx.media3.common.MimeTypes;
+import androidx.media3.common.util.Util;
 import java.lang.*;
 
 import org.apache.cordova.*;
@@ -56,7 +70,7 @@ public class Player {
     private final Configuration config;
     private Dialog dialog;
     private ExoPlayer exoPlayer;
-    private StyledPlayerView exoView;
+    private PlayerView exoView;
     private CordovaWebView webView;
     private int controllerVisibility;
     private boolean paused = false;
@@ -169,7 +183,7 @@ public class Player {
         }
     };
 
-    private StyledPlayerView.ControllerVisibilityListener playbackControlVisibilityListener = new StyledPlayerView.ControllerVisibilityListener() {
+    private PlayerView.ControllerVisibilityListener playbackControlVisibilityListener = new PlayerView.ControllerVisibilityListener() {
         @Override
         public void onVisibilityChanged(int visibility) {
             Player.this.controllerVisibility = visibility;
@@ -484,7 +498,7 @@ public class Player {
 
     public JSONObject getPlayerState() {
         return Payload.stateEvent(exoPlayer,
-                null != exoPlayer ? exoPlayer.getPlaybackState() : com.google.android.exoplayer2.Player.STATE_ENDED,
+                null != exoPlayer ? exoPlayer.getPlaybackState() : androidx.media3.common.Player.STATE_ENDED,
                 Player.this.controllerVisibility == View.VISIBLE);
     }
 
