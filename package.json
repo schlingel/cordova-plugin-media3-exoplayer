@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-exoplayer",
+  "name": "cordova-plugin-media3-exoplayer",
   "version": "2.6.0",
   "description": "Media player for Cordova using Google's ExoPlayer framework",
   "cordova": {
-    "id": "cordova-plugin-exoplayer",
+    "id": "cordova-plugin-media3-exoplayer",
     "platforms": [
       "android"
     ]
@@ -33,9 +33,9 @@
   "author": "Nedim Cholich",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frontyard/cordova-plugin-exoplayer/issues"
+    "url": "https://github.com/schlingel/cordova-plugin-media3-exoplayer/issues"
   },
-  "homepage": "https://github.com/frontyard/cordova-plugin-exoplayer#readme",
+  "homepage": "https://github.com/schlingel/cordova-plugin-media3-exoplayer#readme",
   "devDependencies": {
     "jshint": "^2.9.0"
   }
