@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frontyard/cordova-plugin-exoplayer.git"
+    "url": "git+https://github.com/schlingel/cordova-plugin-media3-exoplayer.git"
   },
   "keywords": [
     "ecosystem:cordova",

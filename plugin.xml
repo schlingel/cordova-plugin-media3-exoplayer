@@ -22,6 +22,13 @@
         <framework src="androidx.media3:media3-exoplayer:1.8.0"/>
         <framework src="androidx.media3:media3-exoplayer-dash:1.8.0"/>
         <framework src="androidx.media3:media3-ui:1.8.0"/>
+        <framework src="androidx.media3:media3-exoplayer-hls:1.8.0"/>
+        <framework src="androidx.media3:media3-exoplayer-smoothstreaming:1.8.0"/>
+        <framework src="androidx.media3:media3-exoplayer-rtsp:1.8.0"/>
+        <framework src="androidx.media3:media3-exoplayer-workmanager:1.8.0"/>
+        <framework src="androidx.media3:media3-exoplayer-ima:1.8.0"/>
+        <framework src="androidx.media3:media3-exoplayer-leanback:1.8.0"/>
+        <framework src="androidx.media3:media3-exoplayer-okhttp:1.8.0"/>
 
         <framework src="com.squareup.picasso:picasso:2.5.2"/>
 
