@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-media3-exoplayer",
-  "version": "2.6.0",
-  "description": "Media player for Cordova using Google's ExoPlayer framework",
+  "version": "3.0.0",
+  "description": "Media player for Cordova using Google's Media3 ExoPlayer framework",
   "cordova": {
     "id": "cordova-plugin-media3-exoplayer",
     "platforms": [

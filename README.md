@@ -1,21 +1,10 @@
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) [![Build Status](https://travis-ci.org/frontyard/cordova-plugin-exoplayer.svg?branch=2.0.0)](https://travis-ci.org/frontyard/cordova-plugin-exoplayer) [![Code Climate](https://codeclimate.com/github/frontyard/cordova-plugin-exoplayer/badges/gpa.svg)](https://codeclimate.com/github/frontyard/cordova-plugin-exoplayer) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2ZPEB7VKFG2CY)
+# Cordova Media3 ExoPlayer Plugin
 
-## THIS PLUGIN IS NO LONGER MAINTAINED, I suggest you find a fork that is still being worked on or create a fork of your own! Thank you for your support 🫶
+Cordova media3 player plugin using [Google's Media3 ExoPlayer framework](https://developer.android.com/media/media3/exoplayer).
 
-# Cordova ExoPlayer Plugin
-
-Cordova media player plugin using Google's ExoPlayer framework.
+This is a fork of [frontyards cordova-plugin-exoplayer](https://github.com/frontyard/cordova-plugin-exoplayer). The code was migrated to Media3 and small bugfixes applied.
 
 Please send us links to your cool projects made with this plugin so we can include them on this page!
-
-## Keeping track of exoplayer versions here:
-|plugin|exoplayer|
-|-----|---------|
-|2.6.0|2.18.1|
-|2.5.7|2.18.1|
-|2.5.6|2.9.6|
-|2.5.5|2.8.1|
-|2.5.4|2.6.1|
 
 ## Changes in version 2.6.0
 Add alternative constructor to allow creation of player without Android UI

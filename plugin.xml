@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="cordova-plugin-media3-exoplayer"
-        version="2.6.0">
+        version="3.0.0">
 
-    <name>ExoPlayer</name>
-    <description>Cordova Plugin implementing ExoPlayer video/audio player</description>
+    <name>Media3 ExoPlayer</name>
+    <description>Cordova Plugin implementing Media3 ExoPlayer video/audio player</description>
     <keywords>ecosystem:cordova,cordova-android,phonegap,cordova,ionic,android,exoplayer,exo,video,player</keywords>
     <license>MIT</license>
 
